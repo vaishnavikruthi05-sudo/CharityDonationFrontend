@@ -2,7 +2,7 @@ import axios from "axios";
 
 // Create axios instance with backend URL
 export const API = axios.create({
-  baseURL: "http://localhost:5000", // your backend URL
+  baseURL: "https://charity-backend-b1tc.onrender.com", // ✅ Render backend URL
 });
 
 // Add token to headers if exists
@@ -13,3 +13,4 @@ export const setAuthToken = (token) => {
     delete API.defaults.headers.common["Authorization"];
   }
 };
+
